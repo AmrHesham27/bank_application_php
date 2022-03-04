@@ -1,0 +1,30 @@
+create table for users where every user has 
+1- name
+2- bank_account (unique)
+3- balance
+4- transactions 
+
+for transactions i will create a clolumn of JSON 
+
+the code to creat the table 
+1-- open xampp apache and mysql 
+2-- type in browser (http://localhost/phpmyadmin/)
+3-- choose your datbase and then choose mysql
+4-- then type the next : 
+
+// notice (AUTO_INCREMENT, JSON, PRIMARY KEY, IF NOT EXISTS)
+create TABLE IF NOT EXISTS customers (
+    name varchar(60) NOT NULL,
+    bank_account int(4) NOT NULL AUTO_INCREMENT,
+    balance int(11) NOT NULL,
+    transactions JSON NOT NULL,
+    PRIMARY KEY (`bank_account`)
+)
+
+// to make the bank account start from 5000
+ALTER TABLE customers AUTO_INCREMENT = 5000; 
+
+// to test your table insert this row then delete it later
+INSERT INTO `customers`
+(name, bank_account, balance, transactions) 
+VALUES ("Amr", null, 0, "{}");
