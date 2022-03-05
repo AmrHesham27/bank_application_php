@@ -3,9 +3,6 @@
     require_once '../components/navbar.php';
 ?>
 <section class="container my-5 py-5">
-    <div class="mb-5">
-        <a href="addCustomer.php" class="btn btn-primary">Add New Customer</a>
-    </div>
     <?php
         require_once '../php/sql.php';
         $sql = "SELECT * FROM `customers`";

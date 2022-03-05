@@ -12,9 +12,6 @@
     $row = $result->fetch_assoc();
 ?>
 <section class="container my-4">
-    <div class="mb-3">
-        <a href="allCustomers.php" class="btn btn-primary my-5">Back to All Customers Page</a>
-    </div>
     <form action="../php/edit_customer.php?bank_account=<?php echo $bank_account ?>" 
             method='post' id= "editCustomerForm">
         <div class="btn-3">

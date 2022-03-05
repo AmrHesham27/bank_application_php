@@ -12,10 +12,6 @@
     $row = $result->fetch_assoc();
 ?>
 <section class="container my-5">
-    <div class="mb-3 my-5">
-        <a href="allCustomers.php" class="btn btn-primary">Back to All Users Page</a>
-    </div>
-    
     <?php
         echo
         "<table id='singleCustomerTable' class='table table-bordered my-5'>

@@ -3,9 +3,6 @@
     require_once '../components/navbar.php';
 ?>
 <section class="container my-4">
-    <div class="mb-3">
-        <a href="allCustomers.php" class="btn btn-primary mt-5 mb-5">Back to All Customers Page</a>
-    </div>
     <form action="../php/add_customer.php" method='post' id= "addCustomer">
         <div class="btn-3 mt-3">
             <label>Name</label>
