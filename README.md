@@ -6,4 +6,3 @@
 
 ## Under Development
 - Learn to Prevent Injections in MySql.
-- Use Components for footer and header.
